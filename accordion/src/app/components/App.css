@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.accordion {
+  transition: height .3s ease, padding .3s ease;
+  max-height: fit-content;
+  height: 0;
+}
+
+.accordion.show {
+  height: 200px;
+  padding: 12px;
+}
