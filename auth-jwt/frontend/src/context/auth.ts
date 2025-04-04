@@ -18,7 +18,7 @@ export const AuthContext = createContext<ContextI>({
     token: null,
     error: null
   },
-  login({ name, password }) {
+  login({ name, password }: { name: string, password: string }) {
     console.log(name, password)
   },
   logout() {
