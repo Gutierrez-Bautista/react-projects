@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-container {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 250px;
+
+  & > p {
+    background: #000;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+  }
+
+  &.card-dragging {
+    border-color: #09f;
+  }
+}
+
+.card {
+  background-color: rgba(113, 28, 249, 0.867);
+  border-radius: 8px;
+  color: #eee;
+  padding: 8px 16px;
+  margin: 0 10px 10px;
+  font-size: large;
+  cursor: pointer;
+  animation: fadeIn .3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drag-n-drop {
+  display: flex;
+  gap: 16px;
+}
