@@ -1,0 +1,16 @@
+.Droppable {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  height: 300px;
+  width: 200px;
+}
+
+.over {
+  border-color: #09fa;
+}
+
+.dropped {
+  border-color: #09fc;
+}
